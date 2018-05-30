@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h2>Drover Review</h2>
+
+<p>
+  <strong>Date:</strong>
+  <%= @review.created_at.strftime("%d %B %Y") %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @review.name %>
+</p>
+
+<p>
+  <strong>Review:</strong>
+  <%= @review.review %>
+</p>
+
+<p>
+  <strong>Rating (out of 5):</strong>
+  <%= @review.rating %>
+</p>
+
+<%= link_to 'Back to all reviews', reviews_path %>
