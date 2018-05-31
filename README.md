@@ -66,6 +66,6 @@ You will need a new form to post a comment to a specific review
 Also you will need to add a new table in the review details page, which shows all
 the comments.
 
-### 3. Add some style. Feel free to update the pages as you please to make the site
-more presentable.
+### 3. Add some style. 
+Feel free to update the pages as you please to make the site more presentable.
 
