@@ -22,9 +22,8 @@
     <%= form.text_area :comment, id: :comment_comment %>
   </div>
   
-   <div class="field">
-    <%= form.label :reviewID %>
-    <%= form.text_field :review_id, id: :comment_review_id, value: params[:format] %>
+ <div class="field">
+    <%= form.hidden_field :review_id, id: :comment_review_id, value: params[:format] %>
   </div>
 
   <div class="actions">
