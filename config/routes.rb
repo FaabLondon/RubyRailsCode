@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
   resources :comments
-  resources :reviews
+  resources :reviews, shallow: true
   root 'application#codeTest'
 end

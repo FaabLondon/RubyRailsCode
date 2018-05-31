@@ -3,7 +3,6 @@ class CreateComments < ActiveRecord::Migration[5.1]
     create_table :comments do |t|
       t.string :name
       t.text :comment
-      t.integer :review_id
 
       t.references :review, foreign_key: true
 

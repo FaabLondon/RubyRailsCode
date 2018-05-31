@@ -1,5 +1,5 @@
 <%= form_with(model: comment, local: true) do |form| %>
- <h2>reviewid <%= params[:id] %></h2>
+
   <% if comment.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(comment.errors.count, "error") %> prohibited this comment from being saved:</h2>
@@ -21,10 +21,10 @@
     <%= form.label :comment %>
     <%= form.text_area :comment, id: :comment_comment %>
   </div>
-
-  <div class="field">
-    <%= form.label :review_id %>
-    <%= form.number_field :review_id, id: :comment_review_id %>
+  
+   <div class="field">
+    <%= form.label :reviewID %>
+    <%= form.text_field :review_id, id: :comment_review_id, value: params[:format] %>
   </div>
 
   <div class="actions">
