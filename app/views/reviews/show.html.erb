@@ -22,5 +22,13 @@
   <%= @review.rating %>
 </p>
 
+<% @review.comments.each do |comment| %>
+  <p>Comment#<%= comment.id %></p>
+  <ul>
+    <li>Name: <%= comment.name %></li>
+    <li>Comment: <%= comment.comment %></li>
+  </ul>
+<% end %>
+
 <%= link_to 'Back to all reviews', reviews_path %>
 <%= link_to 'Comment this review', new_comment_path(@review.id) %>

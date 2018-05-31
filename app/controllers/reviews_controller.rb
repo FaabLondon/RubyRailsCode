@@ -18,8 +18,8 @@ class ReviewsController < ApplicationController
   end
 
   # GET /reviews/1/edit
-  def edit
-  end
+  #def edit
+  #end
 
   # POST /reviews
   # POST /reviews.json
@@ -39,27 +39,27 @@ class ReviewsController < ApplicationController
 
   # PATCH/PUT /reviews/1
   # PATCH/PUT /reviews/1.json
-  def update
-    respond_to do |format|
-      if @review.update(review_params)
-        format.html { redirect_to @review, notice: 'Review was successfully updated.' }
-        format.json { render :show, status: :ok, location: @review }
-      else
-        format.html { render :edit }
-        format.json { render json: @review.errors, status: :unprocessable_entity }
-      end
-    end
-  end
+  #def update
+  #  respond_to do |format|
+  #    if @review.update(review_params)
+  #      format.html { redirect_to @review, notice: 'Review was successfully updated.' }
+  #      format.json { render :show, status: :ok, location: @review }
+  #    else
+  #      format.html { render :edit }
+  #      format.json { render json: @review.errors, status: :unprocessable_entity }
+  #    end
+  #  end
+  #end
 
   # DELETE /reviews/1
   # DELETE /reviews/1.json
-  def destroy
-    @review.destroy
-    respond_to do |format|
-      format.html { redirect_to reviews_url, notice: 'Review was successfully destroyed.' }
-      format.json { head :no_content }
-    end
-  end
+  #def destroy
+  #  @review.destroy
+  #  respond_to do |format|
+  #    format.html { redirect_to reviews_url, notice: 'Review was successfully destroyed.' }
+  #    format.json { head :no_content }
+  #  end
+  #end
 
   private
     # Use callbacks to share common setup or constraints between actions.
